@@ -1,12 +1,12 @@
-
+"use client";
 import Image from 'next/image'
 //import {ScrollContext} from "@/app/template";
 //import {ModalContext} from "@/app/Modal";
-//import React,{useEffect,useRef,useContext} from "react";
+import React,{useEffect,useRef,useContext} from "react";
 import styles from "@/app/page.module.css";
 export default function Home() {
 //const {scrolling,scrollingY} = useContext(ScrollContext)
-//const ref = useRef();
+const ref = useRef();
 //const {setShow} = useContext(ModalContext)
 /*
 
@@ -68,38 +68,9 @@ export default function Home() {
     //<div size={100} bg={"blue"} hover={{rotateZ:50,x:50}} hover={{bg:"green",delay:"1s"}} area={"middle"}></div>
 //mobile={{w:"100%"}}
     return (
-        <main>
-
-            <section>
-                <flex zIndex={"1"} jc={"sa"} w={"100%"} area={"bottom"} tablet={"top"}>
-                    <group tablet={{textAlign:"center",mTop:"5rem"}} maxW={"50rem"}>
-                        <h1>Кофейня в плюсе</h1>
-                        <p del={"0.2s"}>Зарабатывайте больше на кофейном бизнесе вместе с CafeStore</p>
-                    </group>
-                    <group>
-                        <img src={"./section1.png"} w={"100%"}></img>
-                    </group>
-                </flex>
-                <background bg={"#f6f6f8"}></background>
-            </section>
-
-            <bridge h={"10vh"} bg={"red"} brBottom={"50px"}>123</bridge>
-
-            <section>
-                <flex area={"middle"} w={"100%"} tablet={{mTop:"5rem"}}>
-                    <group>
-                        <img src={"./section2.png"} maxW={"500px"} tablet={"300px"} w={"100%"}></img>
-                    </group>
-
-                    <group w={"30rem"} tablet={{textAlign:"center"}}>
-                        <h1>Получите всё и сразу</h1>
-                        <p>Вам не нужно заключать договоры с множеством подрядчиков и выбирать, с кем выгоднее сотрудничать.</p>
-                        <p>Мы всё уже сделали — создали платформу с низкими ценами, быстрой доставкой и выгодным банковским обслуживанием</p>
-                    </group>
-                </flex>
-            </section>
-
-        </main>
+        <div size={"200px"} bg={"red"} tablet={"blue"} active={{bg:"green"}}>
+            123
+        </div>
     )
 
 }
